@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'Futura Book';
+  src: url('./assets/fonts/Futura\ Book\ font.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Futura Medium';
+  src: url('./assets/fonts/Futura\ Medium\ bt.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'Futura Heavy';
+  src: url('./assets/fonts/Futura\ Heavy\ font.ttf');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+*{
+  /* background-color: #f8f4ec; */
+  font-family: 'Futura Medium';
 }
 
-.App-link {
-  color: #61dafb;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.font-book{
+  font-family: 'Futura Book';
+}
+
+.font-medium{
+  font-family: 'Futura Medium';
+}
+
+.font-heavy{
+  font-family: 'Futura Heavy';
+}
+
+.fs-16{
+  font-size: 16px;
+}
+
+.fs-18{
+  font-size: 18px;
+}
+
+.fs-20{
+  font-size: 20px;
+}
+
+.fs-22{
+  font-size: 22px;
+}
+
+.fs-24{
+  font-size: 24px;
+}
+
+.fs-26{
+  font-size: 26px;
+}
+
+.fs-28{
+  font-size: 28px;
+}
+
+.fs-30{
+  font-size: 30px;
+}
+
+.fs-32{
+  font-size: 32px;
+}
+
+.fs-40{
+  font-size: 40px;
+}
+
+.fs-50{
+  font-size: 50px;
+}
+
+.image-wrapper{
+  position: relative;
+  width: 100%; /* The size you want */
+}
+
+.image-wrapper:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%; /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+}
+
+.image-wrapper img {
+  position: absolute; /* Take your picture out of the flow */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; /* Make the picture taking the size of it's parent */
+  width: 100%; /* This if for the object-fit */
+  height: 100%; /* This if for the object-fit */
+  object-fit: cover; /* Equivalent of the background-size: cover; of a background-image */
+  object-position: center;
+  border-radius: 500px;
+}
+

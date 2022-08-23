@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/navbar/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import Home from './components/section/Home';
+import Contact from './components/section/Contact';
+import { forwardRef, useRef } from 'react';
+import Language from './components/navbar/Language';
+import Timeline from './components/section/Timeline';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='d-md-flex'>
+        <div className='col-md-3 h-100 sticky-top justify-content-between'>
+          <Navbar />
+        </div>
+        <div className='col-12 col-md-9'>
+          <div className=''>
+            <Home id='home' />
+            <Timeline id='timeline' />
+            <Contact id='contact' />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

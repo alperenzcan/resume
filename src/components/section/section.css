@@ -1,0 +1,317 @@
+.home {
+    height: 100vh;
+}
+
+.section{
+    padding: 80px 0px;
+}
+
+.entitle {
+    font-size: 18px;
+}
+
+.name {
+    font-size: 50px;
+}
+
+.statement {
+    font-size: 14px
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .entitle {
+        font-size: 14px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .statement {
+        font-size: 20px
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .entitle {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .statement {
+        font-size: 20px
+    }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    .entitle {
+        font-size: 24px;
+    }
+
+    .name {
+        font-size: 46px;
+    }
+
+    .statement {
+        font-size: 22px
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+    .entitle {
+        font-size: 26px;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .statement {
+        font-size: 24px
+    }
+
+}
+
+/* Large screens ----------- */
+
+@media only screen and (min-width : 1824px) {
+
+    .entitle {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 70px;
+    }
+
+    .statement {
+        font-size: 30px
+    }
+}
+
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+    /* CSS KODLARI BURAYA */
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+
+    /* CSS KODLARI BURAYA */
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+
+    /* CSS KODLARI BURAYA */
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* margin: 0; */
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  /* max-width: 1140px; */
+  /* margin: 0 auto; */
+  padding: 80px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #000;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline-container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.timeline-container.left {
+  left: 0;
+}
+
+.timeline-container.right {
+  left: 50%;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #000;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.timeline-container.right::after {
+  left: -8px;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #000;
+  z-index: 1;
+}
+
+.timeline-container.right::before {
+  left: 8px;
+}
+
+.timeline-container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 11px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.timeline-container.left .date {
+  right: -85px;
+}
+
+.timeline-container.right .date {
+  left: -85px;
+}
+
+.timeline-container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 5px 0;
+  top: calc(50% - 20px);
+  background: #f1f4f8;
+  border: 2px solid #000;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  z-index: 1;
+}
+
+.timeline-container.left .icon {
+  right: 56px;
+}
+
+.timeline-container.right .icon {
+  left: 56px;
+}
+
+.timeline-container .content {
+  padding: 30px 90px 30px 30px;
+  background: #f1f4f8;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.timeline-container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.timeline-container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: normal;
+  color: #000;
+}
+
+.timeline-container .content p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 100px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .timeline-container.right {
+    left: 0%;
+  }
+
+  .timeline-container.left::after, 
+  .timeline-container.right::after {
+    left: 92px;
+  }
+
+  .timeline-container.left::before,
+  .timeline-container.right::before {
+    left: 100px;
+    border-color: transparent #f1f4f8 transparent transparent;
+  }
+
+  .timeline-container.left .date,
+  .timeline-container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .timeline-container.left .icon,
+  .timeline-container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .timeline-container.left .content,
+  .timeline-container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
