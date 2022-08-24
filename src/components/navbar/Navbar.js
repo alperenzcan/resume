@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Nav from 'react-bootstrap/Nav';
 import { Navbar as NavBar } from 'react-bootstrap';
 import Offcanvas from 'react-bootstrap/Offcanvas';

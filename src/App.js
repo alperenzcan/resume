@@ -4,8 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Home from './components/section/Home';
 import Contact from './components/section/Contact';
-import { forwardRef, useRef } from 'react';
-import Language from './components/navbar/Language';
 import Timeline from './components/section/Timeline';
 import Skill from './components/section/Skill';
 import Activity from './components/section/Activity';
