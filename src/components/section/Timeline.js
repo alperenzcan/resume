@@ -86,7 +86,7 @@ const Timeline = props => {
                 </div>
                 <div className="timeline-container right">
                     <div className="date"> {t('SEP 2021')} </div>
-                    <i className="icon bi bi-award"></i>
+                    <i className="icon bi bi-book"></i>
                     <div className="content">
                         <h2><b> {t('UNIVERSITY')} </b></h2>
                         <p className='mb-2'>

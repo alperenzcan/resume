@@ -56,7 +56,7 @@ i18n.use(initReactI18next).init({
                 'KIMMTE2 2. Chemical Engineering Design Event':'KIMMTE2 2. Chemical Engineering Design Event',
                 "AIChE Career Lab’18":"AIChE Career Lab’18",
                 'Turkey':'Turkey',
-
+                'Download resume':'Download resume'
 
 
             }
@@ -114,6 +114,7 @@ i18n.use(initReactI18next).init({
                 'KIMMTE2 2. Chemical Engineering Design Event':'KIMMTE2 2. Kimya Mühendisliği Tasarım Etkinliği',
                 "AIChE Career Lab’18":"AIChE Kariyer Lab’18",
                 'Turkey':'Türkiye',
+                'Download resume':'Özgeçmişi indir'
 
             }
         }

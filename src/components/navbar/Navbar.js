@@ -28,8 +28,9 @@ const Navbar = props => {
             <Link to='skill' onClick={handleClose}><div className='font-heavy fs-30 pb-3 navlink'>{t('SKILLS')} </div></Link>
             <Link to='activity' onClick={handleClose}><div className='font-heavy fs-30 pb-3 navlink'>{t('ACTIVITIES')} </div></Link>
             <Link to='contact' onClick={handleClose}><div className='font-heavy fs-30 pb-3 navlink'>{t('CONTACT')} </div></Link>
-
-            <Language />
+            <div className='mt-5'>
+                <Language />
+            </div>
         </div>
     )
 
@@ -53,7 +54,7 @@ const Navbar = props => {
                         onHide={handleClose}>
                         <Offcanvas.Header closeButton />
                         <Offcanvas.Body>
-                            <Nav className="d-flex align-items-center d-md-none flex-grow-1 pe-3 mt-5" >
+                            <Nav className="d-flex align-items-center d-md-none flex-grow-1 pe-3" >
                                 {links}
                             </Nav>
                         </Offcanvas.Body>
