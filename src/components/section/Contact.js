@@ -22,17 +22,22 @@ const Contact = props => {
                     <p className='fs-24 mb-0'>ozcanalpe@gmail.com</p>
                 </div>
                 <div className='d-flex align-items-center'>
-                    <i className="contact-icon bi bi-linkedin me-4"></i>
-                    <p className='fs-24 mb-0'><a href='https://www.linkedin.com/in/ozcanalpe' target='blank'>ozcanalpe</a></p>
-                </div>
-                <div className='d-flex align-items-center'>
                     <i className="contact-icon bi bi-geo-alt-fill me-4"></i>
                     <p className='fs-24 mb-0'>İstanbul / {t('Turkey')}</p>
                 </div>
+                <div className='d-flex align-items-center'>
+                    <i className="contact-icon bi bi-github me-4"></i>
+                    <p className='fs-24 mb-0'><a href='https://github.com/alperenzcan' target='blank'>alperenzcan</a></p>
+                </div>
+                <div className='d-flex align-items-center'>
+                    <i className="contact-icon bi bi-linkedin me-4"></i>
+                    <p className='fs-24 mb-0'><a href='https://www.linkedin.com/in/ozcanalpe' target='blank'>ozcanalpe</a></p>
+                </div>
+               
+               
             </div>
 
         </div>
     )
 }
-
 export default Contact
