@@ -12,7 +12,7 @@ const Home = props => {
 
   return (
     <div className='home section d-flex justify-content-center align-items-md-center' {...props}>
-      <div className='col-8 col-md-6'>
+      <div className='col-10 col-lg-6'>
           <div className='d-md-none col-8'>
             <Image src={profile} />
           </div>

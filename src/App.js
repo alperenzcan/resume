@@ -7,6 +7,7 @@ import Contact from './components/section/Contact';
 import { forwardRef, useRef } from 'react';
 import Language from './components/navbar/Language';
 import Timeline from './components/section/Timeline';
+import Skill from './components/section/Skill';
 
 const App = () => {
 
@@ -17,9 +18,10 @@ const App = () => {
           <Navbar />
         </div>
         <div className='col-12 col-md-9'>
-          <div className=''>
+          <div className='container-md'>
             <Home id='home' />
             <Timeline id='timeline' />
+            <Skill id='skill' />
             <Contact id='contact' />
           </div>
         </div>

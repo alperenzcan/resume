@@ -3,7 +3,7 @@
 }
 
 .section{
-    padding: 80px 0px;
+    padding: 50px 0 0 0;
 }
 
 .entitle {
@@ -16,6 +16,32 @@
 
 .statement {
     font-size: 14px
+}
+
+.skill{
+    font-size: 20px;
+}
+
+.title{
+    font-size: 44px ;
+}
+
+.project-title{
+    font-size: 24px;
+}
+
+.project-desc{
+    font-size: 16px;
+    color: 	#161c2d;
+}
+
+.project-exp{
+    font-size: 20px;
+
+}
+
+.project-link{
+    font-size: 18px;
 }
 
 
@@ -35,6 +61,35 @@
         font-size: 20px
     }
 
+    .section{
+        padding: 10px 0 0 0 ;
+    }
+
+    .skill{
+        font-size: 18px;
+    }
+    
+    .title{
+        font-size: 44px ;
+    }
+    
+    .project-title{
+        font-size: 20px;
+    }
+    
+    .project-desc{
+        font-size: 14px;
+        color: 	#161c2d;
+    }
+    
+    .project-exp{
+        font-size: 20px;
+    
+    }
+    
+    .project-link{
+        font-size: 18px;
+    }
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -49,6 +104,32 @@
 
     .statement {
         font-size: 20px
+    }
+
+    .skill{
+        font-size: 16px;
+    }
+    
+    .title{
+        font-size: 44px ;
+    }
+    
+    .project-title{
+        font-size: 16px;
+    }
+    
+    .project-desc{
+        font-size: 14px;
+        color: 	#161c2d;
+    }
+    
+    .project-exp{
+        font-size: 16px;
+    
+    }
+    
+    .project-link{
+        font-size: 18px;
     }
 
 }
@@ -84,6 +165,32 @@
         font-size: 24px
     }
 
+    .skill{
+        font-size: 18px;
+    }
+    
+    .title{
+        font-size: 44px ;
+    }
+    
+    .project-title{
+        font-size: 24px;
+    }
+    
+    .project-desc{
+        font-size: 16px;
+        color: 	#161c2d;
+    }
+    
+    .project-exp{
+        font-size: 18px;
+    
+    }
+    
+    .project-link{
+        font-size: 18px;
+    }
+
 }
 
 /* Large screens ----------- */
@@ -106,19 +213,19 @@
 /* iPhone 5 (portrait & landscape)----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 
-    /* CSS KODLARI BURAYA */
+    
 }
 
 /* iPhone 5 (landscape)----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
 
-    /* CSS KODLARI BURAYA */
+    
 }
 
 /* iPhone 5 (portrait)----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
 
-    /* CSS KODLARI BURAYA */
+    
 }
 
 
@@ -139,7 +246,7 @@ body {
   width: 100%;
   /* max-width: 1140px; */
   /* margin: 0 auto; */
-  padding: 80px 0;
+  padding: 00px 0;
 }
 
 .timeline::after {
@@ -226,13 +333,13 @@ body {
   display: inline-block;
   width: 40px;
   height: 40px;
-  padding: 5px 0;
+  padding: 2px 0;
   top: calc(50% - 20px);
   background: #f1f4f8;
   border: 2px solid #000;
   border-radius: 40px;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   color: #000;
   z-index: 1;
 }
@@ -311,7 +418,7 @@ body {
 
   .timeline-container.left .content,
   .timeline-container.right .content {
-    padding: 30px 30px 30px 90px;
+    padding: 30px 20px 30px 80px;
     border-radius: 500px 0 0 500px;
   }
 }
