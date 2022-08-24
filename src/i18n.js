@@ -103,7 +103,7 @@ i18n.use(initReactI18next).init({
                 'CERTIFICATES':'SERTİFİKALAR',
                 'West Qurna Oil Train Project': 'West Qurna Ham Petrol Treni Projesi',
                 '(Final year design project of chemical engineering)': '(Kimya mühendisliği son sınıf tasarım projesi)',
-                "Designing a facility which makes crude oil ready for processing, choosing related process equipment, determining the process parameters, controlling the process with a team of five students for one year.": "Bir yıl boyunca beş kişilik öğrenci ekibi ile ham petrolü işlenmeye hazır hale getirmek için proses tarasımının yapılması, ekipman seçimi, proses parametrelerinin belirlenmesi",
+                "Designing a facility which makes crude oil ready for processing, choosing related process equipment, determining the process parameters, controlling the process with a team of five students for one year.": "Bir yıl boyunca beş kişilik öğrenci ekibi ile ham petrolü işlenmeye hazır hale getirmek için proses tasarımının yapılması, ekipman seçimi, proses parametrelerinin belirlenmesi",
                 "ReactJs - Java Spring RESTful project that users can sign up by default roles, can schedule, get, cancel appointments by using an interface.":"Kullanıcıların arayüz yardımı kayıt olabildiği, giriş yapabildiği, randevu alabildiği ve iptal edebildiği reactjs spring-boot projesi",
                 "Online Health Interaction System":"Çevrimiçi Sağlık Etkileşim Sistemi",
                 'Violin performer in Classical Music ensemble':'Klasik müzik topluluğu keman icrası',

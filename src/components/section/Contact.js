@@ -8,7 +8,7 @@ const Contact = props => {
     const { t } = useTranslation()
 
     return (
-        <div className='mt-5' {...props} style={{marginBottom:'300px'}}>
+        <div className='section mt-5' {...props} style={{marginBottom:'300px'}}>
             <div>
                 <h2 className='title'> {t('CONTACT')} </h2>
             </div>
