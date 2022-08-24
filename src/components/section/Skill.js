@@ -32,17 +32,17 @@ const Skill = props => {
     ]
 
     return (
-        <div className='section mt-5' {...props}>
-            <div className=' d-md-flex justify-content-between'>
+        <div className='section' {...props}>
+            <div className=' d-md-flex justify-content-between mt-5'>
                 <div className='col-md-6 mb-5 mb-md-0'>
                     <div>
                         <h2 className='title'>{t('SKILLS')}</h2>
                     </div>
                     <div className='ms-4'>
                         {
-                            skills.map(skill => {
+                            skills.map((skill,index) => {
                                 return (
-                                    <p className='skill text-dark'>
+                                    <p key={index} className='skill text-dark'>
                                         {t(skill)}
                                     </p>
                                 )
@@ -55,9 +55,9 @@ const Skill = props => {
                         <h2 className='title'>{t('PROJECTS')}</h2>
                         <div>
                             {
-                                projects.map(project => {
+                                projects.map((project,index) => {
                                     return (
-                                        <div className='mb-4'>
+                                        <div key={index} className='mb-4'>
                                             <p className='project-title mb-0'>
                                                 <b> {t(project.title)}</b>
                                             </p>

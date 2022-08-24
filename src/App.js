@@ -8,6 +8,7 @@ import { forwardRef, useRef } from 'react';
 import Language from './components/navbar/Language';
 import Timeline from './components/section/Timeline';
 import Skill from './components/section/Skill';
+import Activity from './components/section/Activity';
 
 const App = () => {
 
@@ -22,6 +23,7 @@ const App = () => {
             <Home id='home' />
             <Timeline id='timeline' />
             <Skill id='skill' />
+            <Activity id='activity' />
             <Contact id='contact' />
           </div>
         </div>

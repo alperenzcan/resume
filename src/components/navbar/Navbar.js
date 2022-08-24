@@ -15,10 +15,6 @@ const Navbar = props => {
 
     const [menuOpen, setMenuOpen] = useState(false)
 
-    useEffect(() => {
-        console.log(menuOpen)
-    }, [menuOpen])
-
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
     }
@@ -30,13 +26,15 @@ const Navbar = props => {
             <Link to='home' onClick={handleClose}><div className='font-heavy fs-30 pb-3 navlink'> {t('HOME')}</div></Link>
             <Link to='timeline' onClick={handleClose}><div className='font-heavy fs-30 pb-3 navlink'> {t('TIMELINE')}</div></Link>
             <Link to='skill' onClick={handleClose}><div className='font-heavy fs-30 pb-3 navlink'>{t('SKILLS')} </div></Link>
+            <Link to='activity' onClick={handleClose}><div className='font-heavy fs-30 pb-3 navlink'>{t('ACTIVITIES')} </div></Link>
             <Link to='contact' onClick={handleClose}><div className='font-heavy fs-30 pb-3 navlink'>{t('CONTACT')} </div></Link>
+
             <Language />
         </div>
     )
 
     return (
-        <NavBar expand='md' className="navbar mb-3 bg-light">
+        <NavBar expand='md' className="navbar bg-light">
             <div className='container'>
                 <div className='d-none d-md-block w-100'>
                     <div className='d-flex justify-content-center my-5'>
@@ -55,7 +53,7 @@ const Navbar = props => {
                         onHide={handleClose}>
                         <Offcanvas.Header closeButton />
                         <Offcanvas.Body>
-                            <Nav className="justify-content-end d-md-none flex-grow-1 pe-3">
+                            <Nav className="d-flex align-items-center d-md-none flex-grow-1 pe-3 mt-5" >
                                 {links}
                             </Nav>
                         </Offcanvas.Body>
